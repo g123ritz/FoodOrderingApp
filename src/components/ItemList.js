@@ -1,12 +1,13 @@
 import React from "react";
 import { CDN_URL } from "../utils/constants";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+// import { useSelector } from "react-redux";
 import { addItem, removeItem } from "../redux/cartSlice";
 
 const ItemList = ({ items }) => {
   console.log(items);
 
-  const cartItems = useSelector((store) => store.cart.items);
+  // const cartItems = useSelector((store) => store.cart.items);
 
   const dispatch = useDispatch();
 
@@ -19,7 +20,7 @@ const ItemList = ({ items }) => {
   };
 
   // const isItemInCart = cartItems.length !== 0 ? true : false;
-  const isItemInCart = cartItems.some((cartItem) => cartItem.id === items.id);
+  // const isItemInCart = cartItems.some((cartItem) => cartItem.id === items.id);
 
   return (
     <div>
