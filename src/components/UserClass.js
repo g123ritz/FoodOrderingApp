@@ -33,7 +33,7 @@ class UserClass extends Component{
       
         return(
             <div className="user-card">
-            <img src={this.state.userInfo.avatar_url}/>
+            <img src={this.state.userInfo.avatar_url} alt=""/>
                 <h2>Name:{name}</h2>
                 <h3>Location:{location}</h3>
             </div>

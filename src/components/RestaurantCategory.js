@@ -1,6 +1,6 @@
 import React from "react";
 import ItemList from "./ItemList";
-import { useState } from "react";
+// import { useState } from "react";
 
 const RestaurantCategory = (props) => {
   const { data, showItems, setShowIndex } = props;

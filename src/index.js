@@ -12,6 +12,7 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import "./App.css";
 import Cart from "./components/Cart";
 import AppLayout from './App';
+
 const Grocery = lazy(() => import("./components/Grocery"));
 const appRouter = createBrowserRouter([
   {
